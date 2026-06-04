@@ -6,13 +6,13 @@
   "description": "A beautifully crafted, open-source prompt builder for Midjourney — compose photorealistic prompts layer by layer, with a built-in Prompt Doctor.",
   "license": "MIT",
   "author": "Patricio Molina",
-  "homepage": "https://github.com/your-username/prompt-atelier#readme",
+  "homepage": "https://github.com/patoandresandres-cmyk/prompt-atelier#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/prompt-atelier.git"
+    "url": "https://github.com/patoandresandres-cmyk/prompt-atelier.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/prompt-atelier/issues"
+    "url": "https://github.com/patoandresandres-cmyk/prompt-atelier/issues"
   },
   "keywords": [
     "midjourney",

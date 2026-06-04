@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+/* ── Design tokens ──────────────────────────────────────────────
+   "Golden hour studio": a warm, near-black ink palette with an
+   amber→rose accent — a nod to light being the #1 realism factor. */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+
+  --color-ink-950: #0a0908;
+  --color-ink-900: #0d0b09;
+  --color-ink-850: #110e0c;
+  --color-ink-800: #16120f;
+  --color-ink-750: #1c1713;
+  --color-ink-700: #231d18;
+  --color-line: #2c2620;
+  --color-line-soft: #201a15;
+
+  --color-cream: #f3ede2;
+  --color-muted: #a99e8f;
+  --color-faint: #6f655a;
+
+  --color-amber: #f3b657;
+  --color-gold: #ec9d3f;
+  --color-rose: #e3795f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-ink-950);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: rgba(243, 182, 87, 0.25);
+    color: var(--color-cream);
+  }
+  ::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-ink-700);
+    border-radius: 99px;
+    border: 3px solid var(--color-ink-950);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-line);
+  }
+}
+
+/* Atmospheric background — soft golden-hour glow bleeding from the corners. */
+.atelier-bg {
+  background:
+    radial-gradient(58% 48% at 82% -8%, rgba(236, 157, 63, 0.12), transparent 60%),
+    radial-gradient(48% 42% at -5% 2%, rgba(227, 121, 95, 0.08), transparent 58%),
+    var(--color-ink-950);
+}
+
+.text-gradient {
+  background: linear-gradient(105deg, #f7c668, #ec9d3f 45%, #e3795f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Custom range slider */
+input[type="range"].atelier-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 99px;
+  background: var(--color-ink-700);
+  cursor: pointer;
+  width: 100%;
+}
+input[type="range"].atelier-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-amber);
+  border: 2px solid var(--color-ink-950);
+  box-shadow: 0 0 0 1px var(--color-gold), 0 2px 7px rgba(0, 0, 0, 0.55);
+  transition: transform 0.12s ease;
+}
+input[type="range"].atelier-range::-webkit-slider-thumb:hover {
+  transform: scale(1.12);
+}
+input[type="range"].atelier-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-amber);
+  border: 2px solid var(--color-ink-950);
+}
+
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-fadeup {
+  animation: fadeup 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}

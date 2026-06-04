@@ -1,0 +1,41 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Prompt Atelier">
+  <defs>
+    <radialGradient id="glow1" cx="85%" cy="0%" r="75%">
+      <stop offset="0" stop-color="#ec9d3f" stop-opacity="0.32" />
+      <stop offset="60%" stop-color="#ec9d3f" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow2" cx="2%" cy="100%" r="75%">
+      <stop offset="0" stop-color="#e3795f" stop-opacity="0.20" />
+      <stop offset="60%" stop-color="#e3795f" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7c668" />
+      <stop offset="0.55" stop-color="#ec9d3f" />
+      <stop offset="1" stop-color="#e3795f" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="420" fill="#0a0908" />
+  <rect width="1200" height="420" fill="url(#glow1)" />
+  <rect width="1200" height="420" fill="url(#glow2)" />
+  <rect x="0.5" y="0.5" width="1199" height="419" fill="none" stroke="#2c2620" />
+
+  <!-- aperture mark -->
+  <g transform="translate(80,140)">
+    <rect width="120" height="120" rx="28" fill="#0d0b09" stroke="#2c2620" />
+    <g transform="translate(10,10)" fill="none" stroke="url(#gold)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M50 21 L75 35.5 L75 64.5 L50 79 L25 64.5 L25 35.5 Z" />
+      <path d="M62 50 L56 60.4 L44 60.4 L38 50 L44 39.6 L56 39.6 Z" opacity="0.9" />
+      <path d="M50 21 L56 39.6 M75 35.5 L62 50 M75 64.5 L56 60.4 M50 79 L44 60.4 M25 64.5 L38 50 M25 35.5 L44 39.6" />
+    </g>
+  </g>
+
+  <text x="244" y="200" font-family="Inter, system-ui, sans-serif" font-size="58" font-weight="600" fill="#f3ede2">Prompt <tspan font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="500" fill="url(#gold)">Atelier</tspan></text>
+
+  <text x="246" y="238" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#a99e8f">Compose Midjourney prompts <tspan font-family="Georgia, serif" font-style="italic" fill="#ec9d3f">like a photographer.</tspan></text>
+
+  <rect x="246" y="266" width="788" height="46" rx="10" fill="#0d0b09" stroke="#2c2620" />
+  <text x="264" y="294" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14.5" fill="#f3ede2">golden hour, soft mist, Sony A7R IV <tspan fill="#f3b657">--ar 16:9 --v 7 --style raw</tspan></text>
+
+  <text x="246" y="346" font-family="Inter, system-ui, sans-serif" font-size="13.5" fill="#6f655a" letter-spacing="0.4">Layered builder &#160;·&#160; Prompt Doctor &#160;·&#160; 100% local &#160;·&#160; Open source · MIT</text>
+</svg>

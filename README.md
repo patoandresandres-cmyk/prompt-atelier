@@ -1,11 +1,16 @@
 ![Prompt Atelier](docs/banner.svg)
 
 <p align="center">
+  <a href="https://prompt-atelier-zeta.vercel.app"><img alt="Live demo" src="https://img.shields.io/badge/▶_Live_demo-prompt--atelier-ec9d3f?logo=vercel&logoColor=white"></a>
   <a href="#license"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-ec9d3f.svg"></a>
   <img alt="React 19" src="https://img.shields.io/badge/React-19-1c1713?logo=react&logoColor=f3b657">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-strict-1c1713?logo=typescript&logoColor=f3b657">
   <img alt="Vite" src="https://img.shields.io/badge/Vite-8-1c1713?logo=vite&logoColor=f3b657">
   <img alt="No backend" src="https://img.shields.io/badge/100%25-local-ec9d3f">
+</p>
+
+<p align="center">
+  <b><a href="https://prompt-atelier-zeta.vercel.app">▶&nbsp; Try the live demo</a></b>
 </p>
 
 # Prompt Atelier
